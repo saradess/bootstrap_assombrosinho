@@ -3,11 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Assombrosinho</title>
     <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        .nav-item img{
+            width: 54px;
+            cursor: pointer;
+        }
+        .btn img{
+            width: 54px;
+            cursor: pointer;
+            background-color: #ffffff00;
+        }
+        .title{
+            display: block;
+            color: #140e0a;
+        }
+
+    </style>
 </head>
 <body>
-    <img src="./media/slide_fantasma_1.jpg">
+    <header id="#cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <div class="title">
+                <h1 class="h1">Assombrosinho</h1>
+                <h5 class="h5">Seu fantasma de estimação</h5>
+                </div>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="nav navbar-nav nav-pills">
+                    <li class="nav-item">
+                        <img id="icon-perfil" src="./media/icon_perfil.gif">
+                    </li>
+                    <li class="nav-item">
+                        <img id="icon-compras" src="./media/icon_compras.gif">
+                    </li>
+                    <li class="nav-item">
+                        <img id="icon-caminhao" src="./media/icon_caminhao.gif">
+                    </li>
+                </ul>
+            </nav>
+            <button class="btn" data-bs-toggle="collapse" data-bs-target="#pesquisa">
+                <img src="./media/icon_lupa.gif">
+            </button>
+            <div id="pesquisa" class="collapse collapse-horizontal">
+                <input type="text" placeholder="busque no site">
+            </div>
+            </div>
+        </div>
+    </header>
+    <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div data-bs-interval="3000" class="carousel-item active">
+                <img class="d-block w-100" src="./media/slide_fantasma_1.jpg">
+                <div class="carousel-caption">
+                    <h2>Companhia para noites tenebrosas</h2>
+                </div>
+            </div>
+            <div data-bs-interval="3000" class="carousel-item ">
+                <img class="d-block w-100" src="./media/slide_fantasma_2.jpg">
+                <div class="carousel-caption">
+                    <h2>Contato de outro mundo</h2>
+                </div>
+            </div>
+            <div data-bs-interval="3000" class="carousel-item ">
+                <img class="d-block w-100" src="./media/slide_fantasma_3.jpg">
+                <div class="carousel-caption">
+                    <h2>Um susto cheio de fofura</h2>
+                </div>
+            </div>
+            <div data-bs-interval="3000" class="carousel-item ">
+                <img class="d-block w-100" src="./media/slide_fantasma_4.jpg">
+                <div class="carousel-caption">
+                    <h2>O verdadeiro "espírito" natalino</h2>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+    
+            </div>
+        </div>
+    </div>
 
     <script src="./lib/bootstrap.bundle.min.js"></script>
 </body>
