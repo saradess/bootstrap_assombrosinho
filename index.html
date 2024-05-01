@@ -37,6 +37,19 @@
             background-color: rgb(0, 0, 0, 0.7);
         }
 
+        .card img {
+        max-width: 100%;
+        height: auto;
+        }
+
+        @media (max-width: 767px) {
+
+        .carousel-inner .carousel-item {
+            display: block;
+            margin-bottom: 1rem;
+        }
+    }
+
     </style>
 </head>
 <body>
@@ -95,39 +108,96 @@
         </div>
     </div>
 
-    <h2 id="bilhetes">Bilheteria</h2>
+    <section class="vendas">
+        <div class="container">
+            <h2 id="mascotes">Mascotes</h2>
+    
+            <div id="carouselMascotes" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <div class="card text-bg-dark">
+                                    <img src="./media/produto_fantasma_astronauta.jpg" class="img-fluid"/>
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title">Mascote Fantasma Astronauta</h4>
+                                        <h5 class="card-subtitle">Por: 50$</h5>
+                                        <a href="#" class="btn btn-success">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="card text-bg-dark">
+                                    <img src="./media/produto_fantasma_bombeiro.jpg"class="img-fluid"/>
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title">Mascote Fantasma Bombeiro</h4>
+                                        <h5 class="card-subtitle">Por: 50$</h5>
+                                        <a href="#" class="btn btn-success">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="card text-bg-dark">
+                                    <img src="./media/produto_fantasma_futebol.jpg" class="img-fluid"/>
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title">Mascote Fantasma jogador caro</h4>
+                                        <h5 class="card-subtitle">Por: 50$</h5>
+                                        <a href="#" class="btn btn-success">Comprar</a>                         
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <div class="card text-bg-dark">
+                                    <img src="./media/produto_fantasma_futebol_americano.jpg" class="img-fluid"/>
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title">Mascote Fantasma Futebol Americano</h4>
+                                        <h5 class="card-subtitle">Por: 50$</h5>
+                                        <a href="#" class="btn btn-success">Comprar</a>
+                                    </div>
+                                </div>                            
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="card text-bg-dark">
+                                    <img src="./media/produto_fantasma_policial.jpg" class="img-fluid"/>
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title">Mascote Fantasma Policial</h4>
+                                        <h5 class="card-subtitle">Por: 50$</h5>
+                                        <a href="#" class="btn btn-success">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="card text-bg-dark">
+                                    <img src="./media/produto_fantasma_volei.jpg" class="img-fluid"/>
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title">Mascote Fantasma jogador de volei</h4>
+                                        <h5 class="card-subtitle">Por: 50$</h5>
+                                        <a href="#" class="btn btn-success">Comprar</a>
+                                    </div>                            
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMascotes" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMascotes" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
     <div class="container">
+        <h2 id="bilhetes">Bilheteria</h2>
         <div class="row">
-            <div class="col-12 col-sm-6 col-md-4">
-                <div class="card text-br-dark">
-                    <img src="./media/fantasma_bilheteria_ny.jpg" class="card-img-top" alt="Imagem do filme">
-                    <div class="card-body">
-                        <h4 class="card-title h5">Williamsburg Cine</h4>
-                        <h5 class="card-subtitle mb-2">29 de outubro de 2024</h5>
-                        <p class="card-text small">217 Grans St, Brooklyn, NY</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4">
-                <div class="card text-br-dark">
-                    <img src="./media/fantasma_bilheteria_pa.jpg" class="card-img-top" alt="Imagem do filme">
-                    <div class="card-body">
-                        <h4 class="card-title h5">Williamsburg Cine</h4>
-                        <h5 class="card-subtitle mb-2">29 de outubro de 2024</h5>
-                        <p class="card-text small">217 Grans St, Brooklyn, NY</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4">
-                <div class="card text-br-dark">
-                    <img src="./media/fantasma_bilheteria_br.jpg" class="card-img-top" alt="Imagem do filme">
-                    <div class="card-body">
-                        <h4 class="card-title h5">Williamsburg Cine</h4>
-                        <h5 class="card-subtitle mb-2">29 de outubro de 2024</h5>
-                        <p class="card-text small">217 Grans St, Brooklyn, NY</p>
-                    </div>
-                </div>
-            </div>
             <div class="col-12 col-sm-6 col-md-4">
                 <div class="card text-br-dark">
                     <img src="./media/fantasma_bilheteria_ny.jpg" class="card-img-top" alt="Imagem do filme">
@@ -160,108 +230,6 @@
             </div>
         </div>
     </div>
-    <section class="vendas">
-        <div class="container">
-            <h2 id="mascotes">Mascotes</h2>
-    
-            <div id="carouselMascotes" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="row">
-                                <div class="col-12 col-md-4">
-                                    <div class="card text-bg-dark">
-                                        <img src="./media/produto_fantasma_astronauta.jpg"/>
-                                        <div class="card-img-overlay">
-                                            <h4 class="card-title">Mascote Fantasma Astronauta</h4>
-                                            <h5 class="card-subtitle">Por: 50$</h5>
-                                            <a href="#" class="btn btn-success">Comprar</a>
-                                        </div>
-                                    </div>
-                        </div>
-                        </div>
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-12 col-md-4">
-                                        <div class="card text-bg-dark">
-                                            <img src="./media/produto_fantasma_bombeiro.jpg"/>
-                                            <div class="card-img-overlay">
-                                                <h4 class="card-title">Mascote Fantasma Bombeiro</h4>
-                                                <h5 class="card-subtitle">Por: 50$</h5>
-                                                <a href="#" class="btn btn-success">Comprar</a>
-                                            </div>
-                                        </div> 
-                                </div>
-                            </div>                           
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-12 col-md-4">
-                                        <div class="card text-bg-dark">
-                                            <img src="./media/produto_fantasma_futebol.jpg"/>
-                                            <div class="card-img-overlay">
-                                                <h4 class="card-title">Mascote Fantasma jogador caro</h4>
-                                                <h5 class="card-subtitle">Por: 50$</h5>
-                                                <a href="#" class="btn btn-success">Comprar</a>
-                                            </div>
-                                        </div>                            
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-12 col-md-4">
-                                        <div class="card text-bg-dark">
-                                            <img src="./media/produto_fantasma_futebol_americano.jpg"/>
-                                            <div class="card-img-overlay">
-                                                <h4 class="card-title">Mascote Fantasma Futebol Americano</h4>
-                                                <h5 class="card-subtitle">Por: 50$</h5>
-                                                <a href="#" class="btn btn-success">Comprar</a>
-                                            </div>
-                                        </div>                            
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item ">
-                                <div class="row">
-                                    <div class="col-12 col-md-4">
-                                        <div class="card text-bg-dark">
-                                            <img src="./media/produto_fantasma_policial.jpg"/>
-                                            <div class="card-img-overlay">
-                                                <h4 class="card-title">Mascote Fantasma Policial</h4>
-                                                <h5 class="card-subtitle">Por: 50$</h5>
-                                                <a href="#" class="btn btn-success">Comprar</a>
-                                            </div>
-                                        </div>                            
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-12 col-md-4">
-                                        <div class="card text-bg-dark">
-                                            <img src="./media/produto_fantasma_volei.jpg"/>
-                                            <div class="card-img-overlay">
-                                                <h4 class="card-title">Mascote Fantasma jogador de volei</h4>
-                                                <h5 class="card-subtitle">Por: 50$</h5>
-                                                <a href="#" class="btn btn-success">Comprar</a>
-                                            </div>
-                                        </div>                            
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMascotes" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselMascotes" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-    </section>
 
     <script src="./lib/bootstrap.bundle.min.js"></script>
 </body>
