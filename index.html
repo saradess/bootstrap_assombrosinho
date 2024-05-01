@@ -42,6 +42,44 @@
         height: auto;
         }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#redes {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+#termos li{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+#redes li {
+    margin: 0 10px;
+}
+
+#termos a{
+    text-decoration: none;
+    color: #140e0a;
+}
+
+#termos a:hover, #menu-cabecalho a:hover {
+    color: #8e8e8e;
+}
+
+#redes li a img{
+    max-width: 24px;
+}
+
+
         @media (max-width: 767px) {
 
         .carousel-inner .carousel-item {
@@ -67,10 +105,10 @@
                 <nav class="collapse navbar-collapse justify-content-end" id="menu">
                     <div class="container d-flex justify-content-end">
                         <div class="row">
-                            <div class="col col-lg-12">
+                            <div class="col col-lg-12" id="menu-cabecalho">
                                 <a href="#bilhetes">Bilheteria</a>
                                 <a href="#mascotes">Mascotes</a>
-                                <a href="#">Contato</a>
+                                <a href="#contato">Contato</a>
                             </div>
                         </div>
                     </div>
@@ -111,7 +149,7 @@
     <section class="vendas">
         <div class="container">
             <h2 id="mascotes">Mascotes</h2>
-    
+            
             <div id="carouselMascotes" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -230,6 +268,41 @@
             </div>
         </div>
     </div>
+    <footer>
+        <div class="container" id="contato">
+            <ul id="redes">
+                <li>
+                    <a href="#">
+                        <img src="./media/facebook.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./media/instagram.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./media/youtube.png">
+                    </a>
+                </li>
+            </ul>
+            <nav id="termos">
+                <ul>
+                    <li>
+                        <a href="#">Politica de privacidade</a>
+                    </li>
+                    <li>
+                        <a href="#">Termos de uso</a>
+                    </li>
+                    <li>
+                        <a href="#">Fale Conosco</a>
+                    </li>
+                </ul>
+            </nav>
+            <p>&copy; 2024 - Todos os direitos reservados - Assombrosinho</p>
+        </div>
+    </footer>
 
     <script src="./lib/bootstrap.bundle.min.js"></script>
 </body>
