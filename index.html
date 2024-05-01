@@ -20,6 +20,23 @@
             color: #140e0a;
         }
 
+        .card{
+            margin-top: 8px;
+        }
+
+        .menu-nav nav a{
+        text-decoration: none;
+        color: #181818;
+        font-weight: 700;
+        font-size: 1.3rem;
+        letter-spacing: 0.15rem;
+        margin-left: 2rem;
+        }
+
+        .card-img-overlay{
+            background-color: rgb(0, 0, 0, 0.7);
+        }
+
     </style>
 </head>
 <body>
@@ -33,25 +50,19 @@
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-            <nav class="collapse navbar-collapse justify-content-end" id="menu">
-                <ul class="nav navbar-nav nav-pills">
-                    <li class="nav-item">
-                        <img id="icon-perfil" src="./media/icon_perfil.gif">
-                    </li>
-                    <li class="nav-item">
-                        <img id="icon-compras" src="./media/icon_compras.gif">
-                    </li>
-                    <li class="nav-item">
-                        <img id="icon-caminhao" src="./media/icon_caminhao.gif">
-                    </li>
-                </ul>
-            </nav>
-            <button class="btn" data-bs-toggle="collapse" data-bs-target="#pesquisa">
-                <img src="./media/icon_lupa.gif">
-            </button>
-            <div id="pesquisa" class="collapse collapse-horizontal">
-                <input type="text" placeholder="busque no site">
-            </div>
+            <section class="menu-nav">
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <div class="container d-flex justify-content-end">
+                        <div class="row">
+                            <div class="col col-lg-12">
+                                <a href="#bilhetes">Bilheteria</a>
+                                <a href="#mascotes">Mascotes</a>
+                                <a href="#">Contato</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </section>
             </div>
         </div>
     </header>
@@ -59,28 +70,15 @@
         <div class="carousel-inner">
             <div data-bs-interval="3000" class="carousel-item active" id="slide_1">
                 <img class="d-block w-100" src="./media/slide_fantasma_1.jpg">
-                <div class="dark-overlay"></div>
-                <div class="carousel-caption">
-                    <h2>Companhia para noites tenebrosas</h2>
-                </div>
             </div>
             <div data-bs-interval="3000" class="carousel-item" id="slide_2">
                 <img class="d-block w-100" src="./media/slide_fantasma_2.jpg">
-                <div class="carousel-caption">
-                    <h2>Brincadeiras de outro mundo</h2>
-                </div>
             </div>
             <div data-bs-interval="3000" class="carousel-item " id="slide_3">
                 <img class="d-block w-100" src="./media/slide_fantasma_3.jpg">
-                <div class="carousel-caption">
-                    <h2>Um susto cheio de fofura</h2>
-                </div>
             </div>
             <div data-bs-interval="3000" class="carousel-item " id="slide_4">
                 <img class="d-block w-100" src="./media/slide_fantasma_4.jpg">
-                <div class="carousel-caption">
-                    <h2>O verdadeiro "espírito" natalino</h2>
-                </div>
             </div>
             <button data-bs-target="#carousel" data-bs-slide="prev" class="carousel-control-prev" type="button">
                 <span class="carousel-control-prev-icon"></span>
@@ -93,10 +91,177 @@
                 <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
                 <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
                 <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
-    
             </div>
         </div>
     </div>
+
+    <h2 id="bilhetes">Bilheteria</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card text-br-dark">
+                    <img src="./media/fantasma_bilheteria_ny.jpg" class="card-img-top" alt="Imagem do filme">
+                    <div class="card-body">
+                        <h4 class="card-title h5">Williamsburg Cine</h4>
+                        <h5 class="card-subtitle mb-2">29 de outubro de 2024</h5>
+                        <p class="card-text small">217 Grans St, Brooklyn, NY</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card text-br-dark">
+                    <img src="./media/fantasma_bilheteria_pa.jpg" class="card-img-top" alt="Imagem do filme">
+                    <div class="card-body">
+                        <h4 class="card-title h5">Williamsburg Cine</h4>
+                        <h5 class="card-subtitle mb-2">29 de outubro de 2024</h5>
+                        <p class="card-text small">217 Grans St, Brooklyn, NY</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card text-br-dark">
+                    <img src="./media/fantasma_bilheteria_br.jpg" class="card-img-top" alt="Imagem do filme">
+                    <div class="card-body">
+                        <h4 class="card-title h5">Williamsburg Cine</h4>
+                        <h5 class="card-subtitle mb-2">29 de outubro de 2024</h5>
+                        <p class="card-text small">217 Grans St, Brooklyn, NY</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card text-br-dark">
+                    <img src="./media/fantasma_bilheteria_ny.jpg" class="card-img-top" alt="Imagem do filme">
+                    <div class="card-body">
+                        <h4 class="card-title h5">Williamsburg Cine</h4>
+                        <h5 class="card-subtitle mb-2">29 de outubro de 2024</h5>
+                        <p class="card-text small">217 Grans St, Brooklyn, NY</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card text-br-dark">
+                    <img src="./media/fantasma_bilheteria_pa.jpg" class="card-img-top" alt="Imagem do filme">
+                    <div class="card-body">
+                        <h4 class="card-title h5">Williamsburg Cine</h4>
+                        <h5 class="card-subtitle mb-2">29 de outubro de 2024</h5>
+                        <p class="card-text small">217 Grans St, Brooklyn, NY</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card text-br-dark">
+                    <img src="./media/fantasma_bilheteria_br.jpg" class="card-img-top" alt="Imagem do filme">
+                    <div class="card-body">
+                        <h4 class="card-title h5">Williamsburg Cine</h4>
+                        <h5 class="card-subtitle mb-2">29 de outubro de 2024</h5>
+                        <p class="card-text small">217 Grans St, Brooklyn, NY</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="vendas">
+        <div class="container">
+            <h2 id="mascotes">Mascotes</h2>
+    
+            <div id="carouselMascotes" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-12 col-md-4">
+                                    <div class="card text-bg-dark">
+                                        <img src="./media/produto_fantasma_astronauta.jpg"/>
+                                        <div class="card-img-overlay">
+                                            <h4 class="card-title">Mascote Fantasma Astronauta</h4>
+                                            <h5 class="card-subtitle">Por: 50$</h5>
+                                            <a href="#" class="btn btn-success">Comprar</a>
+                                        </div>
+                                    </div>
+                        </div>
+                        </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12 col-md-4">
+                                        <div class="card text-bg-dark">
+                                            <img src="./media/produto_fantasma_bombeiro.jpg"/>
+                                            <div class="card-img-overlay">
+                                                <h4 class="card-title">Mascote Fantasma Bombeiro</h4>
+                                                <h5 class="card-subtitle">Por: 50$</h5>
+                                                <a href="#" class="btn btn-success">Comprar</a>
+                                            </div>
+                                        </div> 
+                                </div>
+                            </div>                           
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12 col-md-4">
+                                        <div class="card text-bg-dark">
+                                            <img src="./media/produto_fantasma_futebol.jpg"/>
+                                            <div class="card-img-overlay">
+                                                <h4 class="card-title">Mascote Fantasma jogador caro</h4>
+                                                <h5 class="card-subtitle">Por: 50$</h5>
+                                                <a href="#" class="btn btn-success">Comprar</a>
+                                            </div>
+                                        </div>                            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12 col-md-4">
+                                        <div class="card text-bg-dark">
+                                            <img src="./media/produto_fantasma_futebol_americano.jpg"/>
+                                            <div class="card-img-overlay">
+                                                <h4 class="card-title">Mascote Fantasma Futebol Americano</h4>
+                                                <h5 class="card-subtitle">Por: 50$</h5>
+                                                <a href="#" class="btn btn-success">Comprar</a>
+                                            </div>
+                                        </div>                            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div class="row">
+                                    <div class="col-12 col-md-4">
+                                        <div class="card text-bg-dark">
+                                            <img src="./media/produto_fantasma_policial.jpg"/>
+                                            <div class="card-img-overlay">
+                                                <h4 class="card-title">Mascote Fantasma Policial</h4>
+                                                <h5 class="card-subtitle">Por: 50$</h5>
+                                                <a href="#" class="btn btn-success">Comprar</a>
+                                            </div>
+                                        </div>                            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12 col-md-4">
+                                        <div class="card text-bg-dark">
+                                            <img src="./media/produto_fantasma_volei.jpg"/>
+                                            <div class="card-img-overlay">
+                                                <h4 class="card-title">Mascote Fantasma jogador de volei</h4>
+                                                <h5 class="card-subtitle">Por: 50$</h5>
+                                                <a href="#" class="btn btn-success">Comprar</a>
+                                            </div>
+                                        </div>                            
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMascotes" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMascotes" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
 
     <script src="./lib/bootstrap.bundle.min.js"></script>
 </body>
